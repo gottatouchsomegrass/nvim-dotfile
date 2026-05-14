@@ -77,6 +77,8 @@ Covers reload, formatting, LSP setup, and code conventions.
 | C/C++ | clangd | ✅ |
 | Go | gopls | ✅ |
 | Python | pyright | ✅ |
+| Docker | dockerls | ✅ |
+| YAML | yamlls | ✅ |
 
 ### Installation via Mason
 

@@ -7,7 +7,6 @@ return {
   },
   {
     "FelipeLema/cmp-async-path",
-    url = "https://github.com/FelipeLema/cmp-async-path",
   },
   {
     "nvim-treesitter/nvim-treesitter",
@@ -16,7 +15,8 @@ return {
         "vim", "lua", "vimdoc",
         "html", "css", "typescript", "tsx", "javascript",
         "c", "cpp", "go", "python",
-        "json", "yaml", "markdown",
+        "json", "yaml", "markdown", "bash",
+        "dockerfile",
       },
     },
   },
@@ -24,8 +24,8 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   {
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    opts = {},
+    "crnvl96/lazydocker.nvim",
+    cmd = "LazyDocker",
+    dependencies = { "kkharji/sqlite.lua" },
   },
 }

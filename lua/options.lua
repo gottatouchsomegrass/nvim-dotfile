@@ -1,54 +1,43 @@
--- custom/options.lua
+require "nvchad.options"
 
 local opt = vim.opt
 
--- =========================
--- Core UI
--- =========================
-opt.laststatus = 3        -- global statusline
-opt.showmode = false      -- hide -- INSERT --
-opt.cursorline = true     -- highlight current line
-opt.signcolumn = "yes"    -- always show sign column
-opt.wrap = false          -- no line wrap
+-- UI
+opt.laststatus = 3
+opt.showmode = false
+opt.cursorline = true
+opt.signcolumn = "yes"
+opt.wrap = false
+opt.termguicolors = true
 
--- =========================
--- Line Numbers
--- =========================
+-- Numbers
 opt.number = true
-opt.numberwidth = 2
+opt.relativenumber = true
+opt.numberwidth = 4
 
--- =========================
 -- Scrolling
--- =========================
-opt.sidescroll = 1
+opt.scrolloff = 8
 opt.sidescrolloff = 5
 
--- =========================
--- Splits (IMPORTANT FIX)
--- =========================
-opt.splitright = true     -- vertical splits go right
-opt.splitbelow = true     -- horizontal splits go below
+-- Splits
+opt.splitright = true
+opt.splitbelow = true
 
--- =========================
--- Tabs & Indentation
--- =========================
+-- Tabs
 opt.expandtab = true
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
 
--- =========================
--- Visual Tweaks
--- =========================
-opt.fillchars = { eob = " " }  -- remove ~ on empty lines
-opt.termguicolors = true
+-- Search
+opt.ignorecase = true
+opt.smartcase = true
 
--- =========================
+-- Visual
+opt.fillchars = { eob = " " }
+
 -- Clipboard
--- =========================
 opt.clipboard = "unnamedplus"
 
--- =========================
 -- Undo
--- =========================
 opt.undofile = true
